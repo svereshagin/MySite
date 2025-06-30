@@ -1,1 +1,0 @@
-import{d as s,b as a,e as o,n as l,u as t,t as n,o as r,_ as c}from "./index-vWGMtcT0.js";const _=s({__name:"TestAPITostudy",setup(p){let e="red";return(d, u)=>(r(),a("main",null,[o("p",{style:l({color:t(e)})}," HelloWorld",4),o("p",null,n(t(e)),1)]))}}),f=c(_,[["__scopeId","data-v-af449744"]]);export{f as default};

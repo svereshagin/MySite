@@ -138,7 +138,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // Import dependencies
 import { ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
