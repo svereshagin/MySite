@@ -1,12 +1,18 @@
+const fs = require('fs');
+
 module.exports = ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
-  url: env('URL', 'https://strapi.proggyit.ru'),
+  url: 'https://strapi.proggyit.ru',
   app: {
     keys: env.array('APP_KEYS'),
   },
-  webhooks: {
-    populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
+  admin: {
+    url: 'https://strapi.proggyit.ru/admin',
   },
-  allowedHosts: ['strapi.proggyit.ru'], // 👈 добавь сюда
+  // ssl: {
+  //   key: fs.readFileSync('/etc/letsencrypt/live/strapi.proggyit.ru/privkey.pem'),
+  //   cert: fs.readFileSync('/etc/letsencrypt/live/strapi.proggyit.ru/fullchain.pem'),
+  // }
+
 });
