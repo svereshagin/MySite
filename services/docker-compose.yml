@@ -20,7 +20,8 @@ services:
       - "80:80"
     volumes:
       - cert_volume:/etc/letsencrypt
-
+    networks:
+      - webnet
   # Основной веб-сервер
   nginx:
     image: nginx:alpine
@@ -35,7 +36,9 @@ services:
     depends_on:
       - init-dhparams
       - certbot-oneshot
-
+      - certbot-oneshot
+    networks:
+      - webnet
   # Автообновление сертификатов
   certbot:
     image: certbot/certbot
