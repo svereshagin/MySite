@@ -18,7 +18,12 @@ const router = createRouter({
     {
       path: '/articles',
       name: 'articles',
-      component:() => import('../components/ArticleView.vue')
+      component:() => import('../components/articles/Articles.vue')
+    },
+    {
+      path: '/articles/:slug',
+      name: 'ArticleDetail',
+      component: () => import('../components/articles/ArticleDetail.vue')
     },
     {
       path: '/about',
@@ -28,6 +33,14 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
+
+    //TO STUDY DELETE AFTER STUDY
+    {
+      path: '/teststudy',
+      name: '/teststudy',
+      component: () => import('../components/TestAPITostudy.vue')
+    }
+
   ],
 })
 

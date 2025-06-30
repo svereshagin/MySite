@@ -1,6 +1,7 @@
-# vuesite
-
-This template should help get you started developing with Vue 3 in Vite.
+strapi:
+ENDPOINTS:
+API: http://localhost:1337/api/aboutme
+CMS: http://localhost:1337/admin
 
 
 ## PROBLEM SOLVING
@@ -9,6 +10,46 @@ check to do smth with errors with tailwind css(needs to decrease the version of 
 
 ## POSTCSS PROBLEM FIX
 ![img.png](img.png)
+
+## Structure of Vue Project
+
+src/
+├── App.vue                 # Корневой компонент
+├── views/
+│   ├── HomeView.vue        # Главная страница
+│   ├── AboutView.vue       # Страница "О нас"
+│   └── ProductsView.vue    # Страница товаров
+└── components/
+├── AppHeader.vue           # Шапка сайта
+├── ProductCard.vue         # Карточка товара
+└── BaseButton.vue          # Кнопка
+---
+Когда создавать компонент?
+
+    Если элемент повторяется >1 раза
+    
+    Если логику можно изолировать (например, модальное окно)
+    
+    Пример: ProductCard.vue, DropdownMenu.vue
+---
+Когда создавать view?
+
+    Для каждой уникальной страницы (роута)
+    
+    Пример: UserProfileView.vue для /profile
+---
+App.vue лучше держать "чистым":
+
+    Только общий layout
+    
+    Глобальные обработчики ошибок
+    
+    Основные провайдеры (например, для i18n)
+
+
+
+
+
 
 
 ## Recommended IDE Setup
