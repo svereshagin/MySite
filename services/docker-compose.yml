@@ -1,39 +1,12 @@
 services:
-  postgres:
-    image: postgres:15
-    container_name: postgres
-    env_file: .env
-    environment:
-      - POSTGRES_USER=${POSTGRES_USER}
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-      - POSTGRES_DB=${POSTGRES_DB}
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-      - ./initsql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+  # Nginx для раздачи статики Vue
+  nginx:
+    image: nginx:alpine
+    container_name: vue_nginx
     ports:
-      - "${POSTGRES_PORT}:${POSTGRES_PORT}"
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}" ]
-      interval: 10s
-      timeout: 5s
-      retries: 20
-    restart: always
-
-  pgadmin:
-    image: dpage/pgadmin4
-    container_name: pgadmin
-    env_file: .env
-    environment:
-      - "PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}"
-      - "PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}"
+      - "80:80"       # HTTP
+      - "443:443"     # HTTPS (если добавите SSL)
     volumes:
-      - pgadmin_data:/var/lib/pgadmin
-    ports:
-      - "8080:80"
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./dist:/usr/share/nginx/html  # Папка со сборкой Vue
     restart: unless-stopped
-    depends_on:
-      - postgres
-
-volumes:
-  postgres_data:
-  pgadmin_data:
