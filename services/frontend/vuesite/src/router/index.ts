@@ -18,12 +18,12 @@ const router = createRouter({
     {
       path: '/articles',
       name: 'articles',
-      component:() => import('../components/articles/Articles.vue')
+      component:() => import('../components/Articles.vue')
     },
     {
       path: '/articles/:slug',
       name: 'ArticleDetail',
-      component: () => import('../components/articles/ArticleDetail.vue')
+      component: () => import('../components/ArticleDetail.vue')
     },
     {
       path: '/about',
