@@ -43,24 +43,8 @@ services:
     volumes:
       - strapi-data:/var/lib/postgresql/data/ #using a volume
       #- ./data:/var/lib/postgresql/data/ # if you want to use a bind folder
-
     ports:
       - "5432:5432"
-    networks:
-      - strapi
-      -
-
-  nginx:
-    image: nginx:alpine
-    container_name: strapi_nginx
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
-      - ./ssl:/etc/nginx/ssl
-    depends_on:
-      - strapi
     networks:
       - strapi
 
