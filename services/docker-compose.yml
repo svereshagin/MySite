@@ -36,7 +36,6 @@ services:
     depends_on:
       - init-dhparams
       - certbot-oneshot
-      - certbot-oneshot
     networks:
       - webnet
   # Автообновление сертификатов
