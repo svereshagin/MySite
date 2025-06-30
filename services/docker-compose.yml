@@ -50,3 +50,6 @@ services:
 
 volumes:
   cert_volume:
+
+networks:
+  webnet:
