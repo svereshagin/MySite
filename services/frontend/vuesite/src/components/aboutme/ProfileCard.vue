@@ -3,7 +3,7 @@
     <div class="profile-container">
       <div class="profile-image-wrapper">
         <img
-          :src="photo"
+          :src="heroPhoto"
           :alt="name"
           class="profile-image"
           @error="handleImageError"
@@ -29,7 +29,7 @@ interface SocialLinksType {
 interface Props {
   name: string
   jobDescription: string
-  photo: string
+  heroPhoto: string
   socialLinks: SocialLinksType
 }
 
@@ -38,7 +38,6 @@ defineProps<Props>()
 const handleImageError = (event: Event) => {
   const target = event.target as HTMLImageElement
   console.log('Profile image failed to load:', target.src)
-  target.src = 'https://via.placeholder.com/400x400/cccccc/666666?text=No+Image'
 }
 </script>
 

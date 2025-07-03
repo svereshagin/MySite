@@ -13,7 +13,7 @@
             <ProfileCard
               :name="heroName"
               :job-description="jobDescription"
-              :photo="heroPhoto"
+              :heroPhoto="heroPhoto"
               :social-links="{
                 linkedin: link_linkedin,
                 telegram: link_telegram,
@@ -43,11 +43,12 @@
 <script setup lang="ts">
 import { getAboutMe } from "@/api/aboutme.ts";
 import { ref, onMounted } from 'vue'
-import HeroSection from './aboutme/HeroSection.vue'
-import ProfileCard from './aboutme/ProfileCard.vue'
-import MainContent from './aboutme/MainContent.vue'
-import AppFooter from './footer/Footer.vue'
-import Skills from "@/components/aboutme/Skills.vue";
+
+import HeroSection from '../components/aboutme/HeroSection.vue'
+import ProfileCard from '../components/aboutme/ProfileCard.vue'
+import MainContent from '../components/aboutme/MainContent.vue'
+import AppFooter from '../components/footer/Footer.vue'
+
 // Reactive data
 const bgContentTitle = ref('')
 const bgContentDescription = ref('')
@@ -74,7 +75,7 @@ onMounted(async () => {
   heroName.value = data.data.heroName
   bgContentTitle.value = data.data.bgContentTitle
   bgContentDescription.value = data.data.bgContentDescription
-  bgContentPhoto.value = import.meta.env.VITE_STRAPI_URL + data.data.bgContentPhoto.url
+
   jobDescription.value = data.data.jobDescription
   link_telegram.value = data.data.link_telegram
   link_habr.value = data.data.link_habr
@@ -86,7 +87,10 @@ onMounted(async () => {
   mainText3.value = data.data.mainText3
   letsConnect.value = data.data.letsConnect
   contacts.value = data.data.contacts
-  heroPhoto.value = import.meta.env.VITE_STRAPI_URL + data.data.heroPhoto.url
+
+
+  heroPhoto.value = data.data.heroPhoto.url
+  bgContentPhoto.value = data.data.bgContentPhoto.url
 })
 </script>
 
