@@ -17,7 +17,17 @@ const router = createRouter({
     {
       path: '/articles',
       name: 'articles',
-      component:() => import('../views/blog-page.vue')
+      component:() => import('../views/Blog.vue')
+    },
+    {
+      path: '/test_page',
+      name: 'test_page',
+      component: () => import('../views/parent.vue')
+    },
+    {
+      path: '/calendar',
+      name: 'calendar',
+      component: () => import('../components/calender-app.vue')
     },
   ],
 })

@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header" :class="{ 'dark': isDark }">
     <nav class="nav">
       <div class="nav-container">
         <!-- Logo/Brand -->
@@ -25,11 +25,24 @@
               <component :is="item.icon" class="nav-icon" />
               {{ item.name }}
             </RouterLink>
+
+            <!-- Theme Toggle Button -->
+            <button @click="toggleTheme" class="theme-toggle" :title="isDark ? 'Switch to light mode' : 'Switch to dark mode'">
+              <SunIcon v-if="isDark" class="theme-icon" />
+              <MoonIcon v-else class="theme-icon" />
+            </button>
           </div>
         </div>
 
-        <!-- Mobile menu button -->
-        <div class="mobile-menu-button">
+        <!-- Mobile menu button and theme toggle -->
+        <div class="mobile-controls">
+          <!-- Theme Toggle for Mobile -->
+          <button @click="toggleTheme" class="theme-toggle mobile-theme-toggle" :title="isDark ? 'Switch to light mode' : 'Switch to dark mode'">
+            <SunIcon v-if="isDark" class="theme-icon" />
+            <MoonIcon v-else class="theme-icon" />
+          </button>
+
+          <!-- Mobile Menu Button -->
           <button @click="toggleMobileMenu" class="menu-btn">
             <span class="sr-only">Open main menu</span>
             <!-- Hamburger icon -->
@@ -77,7 +90,7 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 // Иконки как компоненты
@@ -113,23 +126,43 @@ const TestIcon = {
   `
 }
 
+const SunIcon = {
+  template: `
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+    </svg>
+  `
+}
+
+const MoonIcon = {
+  template: `
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+    </svg>
+  `
+}
+
 export default {
-  name: 'NavigationCSS',
+  name: 'NavigationWithTheme',
   components: {
     HomeIcon,
     ArticlesIcon,
     AboutIcon,
-    TestIcon
+    TestIcon,
+    SunIcon,
+    MoonIcon
   },
   setup() {
     const route = useRoute()
     const isMobileMenuOpen = ref(false)
+    const isDark = ref(false)
 
     const navigationItems = [
       { name: 'Home', path: '/', icon: 'HomeIcon' },
       { name: 'Articles', path: '/articles', icon: 'ArticlesIcon' },
       { name: 'About Me', path: '/aboutme', icon: 'AboutIcon' },
-      { name: 'Test Study', path: '/teststudy', icon: 'TestIcon' }
+      { name: 'Test Study', path: '/test_page', icon: 'TestIcon' },
+      { name: 'My Calendar', path: '/calendar', icon: 'TestIcon' },
     ]
 
     const toggleMobileMenu = () => {
@@ -147,18 +180,59 @@ export default {
       return route.path.startsWith(path)
     }
 
+    const toggleTheme = () => {
+      isDark.value = !isDark.value
+      localStorage.setItem('theme', isDark.value ? 'dark' : 'light')
+      updateBodyTheme()
+    }
+
+    const updateBodyTheme = () => {
+      if (isDark.value) {
+        document.documentElement.classList.add('dark')
+        document.body.style.backgroundColor = '#111827'
+        document.body.style.color = '#f9fafb'
+      } else {
+        document.documentElement.classList.remove('dark')
+        document.body.style.backgroundColor = '#ffffff'
+        document.body.style.color = '#111827'
+      }
+    }
+
+    const initTheme = () => {
+      const savedTheme = localStorage.getItem('theme')
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+      isDark.value = savedTheme ? savedTheme === 'dark' : prefersDark
+      updateBodyTheme()
+    }
+
+    onMounted(() => {
+      initTheme()
+    })
+
+    watch(isDark, () => {
+      updateBodyTheme()
+    })
+
     return {
       navigationItems,
       isMobileMenuOpen,
+      isDark,
       toggleMobileMenu,
       closeMobileMenu,
-      isActiveRoute
+      isActiveRoute,
+      toggleTheme
     }
   }
 }
 </script>
 
 <style scoped>
+/* Base transitions for smooth theme switching */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
 /* Header */
 .header {
   background: white;
@@ -166,6 +240,11 @@ export default {
   position: sticky;
   top: 0;
   z-index: 50;
+}
+
+.header.dark {
+  background: #1f2937;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
 
 .nav {
@@ -195,6 +274,10 @@ export default {
   color: #1f2937;
   text-decoration: none;
   transition: color 0.2s;
+}
+
+.dark .logo-link {
+  color: #f9fafb;
 }
 
 .logo-link:hover {
@@ -236,10 +319,18 @@ export default {
   transition: all 0.2s;
 }
 
+.dark .nav-link {
+  color: #d1d5db;
+}
+
 .nav-link:hover {
   color: #3b82f6;
   background-color: #eff6ff;
   transform: scale(1.05);
+}
+
+.dark .nav-link:hover {
+  background-color: #1e3a8a;
 }
 
 .nav-link-active {
@@ -248,16 +339,71 @@ export default {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.dark .nav-link-active {
+  background-color: #1e40af;
+  color: #bfdbfe;
+}
+
 .nav-icon {
   width: 1rem;
   height: 1rem;
 }
 
-/* Mobile Menu Button */
-.mobile-menu-button {
-  display: block;
+/* Theme Toggle */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  color: #4b5563;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+.dark .theme-toggle {
+  color: #d1d5db;
+}
+
+.theme-toggle:hover {
+  color: #3b82f6;
+  background-color: #f3f4f6;
+  transform: scale(1.1);
+}
+
+.dark .theme-toggle:hover {
+  background-color: #374151;
+}
+
+.theme-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover .theme-icon {
+  transform: rotate(180deg);
+}
+
+/* Mobile Controls */
+.mobile-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mobile-theme-toggle {
+  padding: 0.375rem;
+}
+
+.mobile-theme-toggle .theme-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+/* Mobile Menu Button */
 .menu-btn {
   display: inline-flex;
   align-items: center;
@@ -271,9 +417,17 @@ export default {
   transition: all 0.2s;
 }
 
+.dark .menu-btn {
+  color: #d1d5db;
+}
+
 .menu-btn:hover {
   color: #3b82f6;
   background-color: #f3f4f6;
+}
+
+.dark .menu-btn:hover {
+  background-color: #374151;
 }
 
 .menu-icon {
@@ -299,12 +453,21 @@ export default {
   border-top: 1px solid #e5e7eb;
 }
 
+.dark .mobile-nav {
+  border-top-color: #374151;
+}
+
 .mobile-nav-container {
   padding: 0.5rem;
   background-color: #f9fafb;
   border-radius: 0.5rem;
   margin: 0.5rem;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.dark .mobile-nav-container {
+  background-color: #374151;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .mobile-nav-link {
@@ -321,9 +484,17 @@ export default {
   margin-bottom: 0.25rem;
 }
 
+.dark .mobile-nav-link {
+  color: #d1d5db;
+}
+
 .mobile-nav-link:hover {
   color: #3b82f6;
   background-color: white;
+}
+
+.dark .mobile-nav-link:hover {
+  background-color: #4b5563;
 }
 
 .mobile-nav-link-active {
@@ -331,6 +502,11 @@ export default {
   background-color: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   border-left: 4px solid #3b82f6;
+}
+
+.dark .mobile-nav-link-active {
+  background-color: #4b5563;
+  color: #bfdbfe;
 }
 
 .mobile-nav-icon {
@@ -344,7 +520,7 @@ export default {
     display: block;
   }
 
-  .mobile-menu-button {
+  .mobile-controls {
     display: none;
   }
 
@@ -367,5 +543,14 @@ export default {
 
 .mobile-nav {
   animation: slideDown 0.2s ease-out;
+}
+
+/* Smooth theme transition */
+.header,
+.nav-link,
+.mobile-nav-link,
+.theme-toggle,
+.menu-btn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 </style>

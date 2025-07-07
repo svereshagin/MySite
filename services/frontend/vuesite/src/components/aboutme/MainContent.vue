@@ -32,7 +32,7 @@ interface Props {
   mainText3: string
   letsConnect: string
   contacts: string
-  skills: array[]
+  skills: Array<any>
 }
 
 defineProps<Props>()
