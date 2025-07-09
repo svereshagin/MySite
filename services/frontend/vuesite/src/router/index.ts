@@ -29,6 +29,17 @@ const router = createRouter({
       name: 'calendar',
       component: () => import('../components/calender-app.vue')
     },
+    {
+      path: '/chess-rating-fide',
+      name: 'chess-rating-fide',
+      component: () => import('../views/chess-rating-fide-calculator.vue')
+    },
+    {
+      path: '/testcase/page1',
+      name: 'testcase/page1',
+      component: () => import('../views/testcase.vue')
+
+    }
   ],
 })
 

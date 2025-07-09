@@ -163,6 +163,8 @@ export default {
       { name: 'About Me', path: '/aboutme', icon: 'AboutIcon' },
       { name: 'Test Study', path: '/test_page', icon: 'TestIcon' },
       { name: 'My Calendar', path: '/calendar', icon: 'TestIcon' },
+      { name: 'FIDE', path: '/chess-rating-fide', icon: 'TestIcon' },
+      { name: 'page1', path: 'testcase/page1', icon: 'TestIcon' },
     ]
 
     const toggleMobileMenu = () => {
