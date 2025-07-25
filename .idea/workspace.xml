@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3fea66f-3073-4eba-bf01-a3aaa886f7e6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MySite.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pyright-overrides.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/backend/ert.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dist/assets/AboutView-CHJyl-5N.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dist/assets/Aboutme-4bKhgVuB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dist/assets/Aboutme-BP-euIVD.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dist/assets/ArticleDetail-CNy59smI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dist/assets/ArticleDetail-VBUZUdqx.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dist/assets/Articles-BqoARDme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dist/assets/Articles-C-r8sTQI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dist/assets/TestAPITostudy--7mqZ4b9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dist/assets/TestAPITostudy-KXWYHh5O.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dist/assets/index-BnhwLiMa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dist/assets/index-ZuhexmVk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dist/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/api/aboutme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/services/endpoints/aboutme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/api/axios.ts" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/services/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/assets/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/assets/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/assets/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/assets/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/__tests__/HelloWorld.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/__tests__/HelloWorld.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/aboutme/ContactSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/ContactSection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/aboutme/HeroSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/HeroSection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/aboutme/MainContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/MainContent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/aboutme/ProfileCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/ProfileCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/aboutme/Skills.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/Skills.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/aboutme/SocialLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/SocialLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/aboutme/WelcomeLabel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/WelcomeLabel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/blog/ArticlesGrid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/blog/ArticlesGrid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/blog/BlogFilters.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/blog/BlogFilters.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/blog/BlogHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/blog/BlogHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/blog/BlogSidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/blog/BlogSidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/blog/Pagination.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/blog/Pagination.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/calender-app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/calender-app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/footer/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/footer/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/header/ChessFideNavigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/header/ChessFideNavigation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/header/Navigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/header/Navigation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/icons/IconCommunity.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/icons/IconCommunity.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/icons/IconDocumentation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/icons/IconDocumentation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/icons/IconEcosystem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/icons/IconEcosystem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/icons/IconSupport.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/icons/IconSupport.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/icons/IconTooling.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/icons/IconTooling.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/components/icons/search-icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/archive/icons/search-icon.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/composables/use-blog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/services/frontend/vuesite/src/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/views/Aboutme.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/views/Blog.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/views/BlogPost.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/views/chess-rating-fide-calculator.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/views/daughter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/views/parent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/frontend/vuesite/src/views/testcase.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/initsql/init.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/initsql/nginx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/backup/.dockerignore.1751874347220" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/backup/Dockerfile.prod.1751874314152" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/config/admin.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/config/api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/config/database.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/config/middlewares.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/config/plugins.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/config/server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/uploads/a-bug-is-becoming-a-meme-on-the-internet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/uploads/beautiful-picture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/uploads/coffee-art.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/uploads/coffee-beans.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/uploads/coffee-shadow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/uploads/daviddoe@strapi.io.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/uploads/default-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/uploads/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/uploads/sarahbaker@strapi.io.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/uploads/the-internet-s-own-boy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/uploads/this-shrimp-is-awesome.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/uploads/we-love-pizza.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/data/uploads/what-s-inside-a-black-hole.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/database/migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/nginx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/public/uploads/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/scripts/seed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/admin/app.example.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/admin/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/admin/vite.config.example.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/about/content-types/about/schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/about/controllers/about.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/about/routes/about.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/about/services/about.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/aboutme/content-types/aboutme/schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/aboutme/controllers/aboutme.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/aboutme/routes/aboutme.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/aboutme/services/aboutme.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/article/content-types/article/schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/article/controllers/article.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/article/routes/article.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/article/services/article.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/author/content-types/author/schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/author/controllers/author.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/author/routes/author.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/author/services/author.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/category/content-types/category/schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/category/controllers/category.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/category/routes/category.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/category/services/category.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/global/content-types/global/schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/global/controllers/global.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/global/routes/global.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/api/global/services/global.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/components/shared/media.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/components/shared/quote.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/components/shared/rich-text.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/components/shared/seo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/components/shared/slider.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/components/skills/skills.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/extensions/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/src/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/types/generated/components.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/server/types/generated/contentTypes.d.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;svereshagin&quot;
+  }
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1753465693" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1753465692" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/svereshagin/MySite.git&quot;,
+    &quot;accountId&quot;: &quot;7db963f4-18b6-4688-a06e-7f5321e77556&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="30Dy96QtXud81rsdi0nqmu9Ippe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "ignore_missing_gitignore": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\amadeo\\WebstormProjects\\MySite\\services\\frontend\\vuesite\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\amadeo\WebstormProjects\MySite\services\frontend\vuesite\src\assets\css" />
+      <recent name="C:\Users\amadeo\WebstormProjects\MySite\services\frontend\vuesite\src\services\endpoints" />
+      <recent name="C:\Users\amadeo\WebstormProjects\MySite\services\frontend\vuesite\src\services" />
+      <recent name="C:\Users\amadeo\WebstormProjects\MySite\services\frontend\vuesite\src\assets\images" />
+      <recent name="C:\Users\amadeo\WebstormProjects\MySite\services\frontend\vuesite\src" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-WS-251.26094.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3fea66f-3073-4eba-bf01-a3aaa886f7e6" name="Changes" comment="" />
+      <created>1753176283318</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753176283318</updated>
+      <workItem from="1753176284355" duration="3539000" />
+      <workItem from="1753464458757" duration="18000" />
+      <workItem from="1753464485760" duration="982000" />
+      <workItem from="1753465483689" duration="2060000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

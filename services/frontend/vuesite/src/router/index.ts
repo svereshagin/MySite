@@ -27,7 +27,7 @@ const router = createRouter({
     {
       path: '/calendar',
       name: 'calendar',
-      component: () => import('../components/calender-app.vue')
+      component: () => import('@/archive/calender-app.vue')
     },
     {
       path: '/chess-rating-fide',

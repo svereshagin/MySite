@@ -1,0 +1,9 @@
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1280px;
+
+@media (max-width: $mobile)    { /* смартфоны */ }
+@media (min-width: $tablet)    { /* планшеты */ }
+@media (min-width: $laptop)    { /* ноутбуки */ }
+@media (min-width: $desktop)   { /* большие экраны */ }
