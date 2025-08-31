@@ -1,5 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import LoginPage from "../views/Login.vue"
+import ProtectedPage from "../views/ProtectedPage.vue"
+import { isAuthenticated } from "../utils/auth.ts"
 
+const requireAuth = (to, from, next) => {
+  if (isAuthenticated()) {
+    next()
+  } else {
+    next("/login")
+  }
+}
+
+const redirectIfAuthenticated = (to, from, next) => {
+  if (isAuthenticated()) {
+    next("/protected")
+  } else {
+    next()
+  }
+}
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL || '/'),
@@ -39,7 +57,19 @@ const router = createRouter({
       name: 'testcase/page1',
       component: () => import('../views/testcase.vue')
 
-    }
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/Login.vue'),
+      beforeEnter: redirectIfAuthenticated,
+    },
+    {
+      path: "/protected",
+      name: "Protected",
+      component: ProtectedPage,
+      beforeEnter: requireAuth, // Protect this route
+    },
   ],
 })
 
