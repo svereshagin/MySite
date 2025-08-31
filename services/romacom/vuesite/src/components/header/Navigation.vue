@@ -159,13 +159,13 @@ export default {
 
     const navigationItems = [
       { name: 'Home', path: '/', icon: 'HomeIcon' },
-      { name: 'Articles', path: '/articles', icon: 'ArticlesIcon' },
+      //{ name: 'Articles', path: '/articles', icon: 'ArticlesIcon' },
       { name: 'About Me', path: '/aboutme', icon: 'AboutIcon' },
-      { name: 'Test Study', path: '/test_page', icon: 'TestIcon' },
+      { name: 'Хомяк из 90х', path: '/test_page', icon: 'TestIcon' },
       { name: 'My Calendar', path: '/calendar', icon: 'TestIcon' },
       { name: 'FIDE', path: '/chess-rating-fide', icon: 'TestIcon' },
-      { name: 'page1', path: 'testcase/page1', icon: 'TestIcon' },
-      { name: 'login', path: '/login', icon: 'TestIcon' },
+      { name: 'Сдать работу', path: '/login', icon: 'TestIcon' },
+      // { name: 'Просмотр работ', path: '/works', icon: 'TestIcon' },
     ]
 
     const toggleMobileMenu = () => {

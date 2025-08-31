@@ -83,7 +83,7 @@ const handleLogin = async () => {
 
     console.log('[v0] Attempting login for user:', login.value)
 
-    const response = await fetch('http://localhost:8000/api/v1/login', {
+    const response = await fetch('api/v1/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

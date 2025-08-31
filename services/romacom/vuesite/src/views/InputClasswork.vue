@@ -8,7 +8,7 @@
 
       <form @submit.prevent="submitForm" class="upload-form">
         <div class="form-group">
-          <label for="title" class="form-label">Название</label>
+          <label for="title" class="form-label">Название Работы (Пример: Task 1 || Lesson 1)</label>
           <input
             id="title"
             v-model="formData.title"
@@ -130,7 +130,7 @@ export default {
         formDataToSend.append('file', selectedFile.value)
         formDataToSend.append('comment', formData.comment)
 
-        const response = await makeAuthenticatedRequest('http://localhost:8000/api/v1/classwork/', {
+        const response = await makeAuthenticatedRequest('api/v1/classwork/', {
           method: 'POST',
           body: formDataToSend
         })
